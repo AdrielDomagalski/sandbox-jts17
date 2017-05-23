@@ -10,6 +10,10 @@ public class Calculador {
         this.calculatorFunctions = calculatorFunctions;
     }
 
+    public Calculador() {
+
+    }
+
     public Double executeCalculator(Double num1, Double num2){
         return calculatorFunctions.Operacao(num1, num2);
     }
