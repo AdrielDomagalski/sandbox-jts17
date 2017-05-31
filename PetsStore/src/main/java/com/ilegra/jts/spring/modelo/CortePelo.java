@@ -1,4 +1,4 @@
-package com.ilegra.jts.spring;
+package com.ilegra.jts.spring.modelo;
 
 /**
  * Created by Adriel on 30/05/2017.
@@ -6,10 +6,12 @@ package com.ilegra.jts.spring;
 public class CortePelo {
     private boolean peloCurto;
     private boolean peloLongo;
+    private int id;
 
     public CortePelo(int id, boolean peloCurto, boolean peloLongo) {
         this.peloCurto = peloCurto;
         this.peloLongo = peloLongo;
+        this.id = id;
     }
 
     public boolean isPeloCurto() {
@@ -26,16 +28,5 @@ public class CortePelo {
 
     public void setPeloLongo(boolean peloLongo) {
         this.peloLongo = peloLongo;
-    }
-
-    @Override
-    public String toString() {
-        if(peloCurto == true){
-            return "Corte Curto";
-        }else if(peloLongo == true){
-            return "Corte Longo";
-        }else {
-             return "Sem corte";
-        }
     }
 }

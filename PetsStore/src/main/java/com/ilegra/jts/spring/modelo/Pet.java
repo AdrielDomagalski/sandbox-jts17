@@ -1,7 +1,4 @@
-package com.ilegra.jts.spring;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.ilegra.jts.spring.modelo;
 
 /**
  * Created by Adriel on 29/05/2017.
@@ -12,6 +9,15 @@ public class Pet {
     private String raca;
     private int idade;
 
+    private Banho banho;
+
+    public Banho getBanho() {
+        return banho;
+    }
+
+    public void setBanho(Banho banho) {
+        this.banho = banho;
+    }
 
     public int getId() {
         return id;
