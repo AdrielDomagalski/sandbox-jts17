@@ -16,12 +16,15 @@ public class Principal {
         add.addPet(pet2);
         add.addPet(pet3);
 
-        add.ListaPet();
+//        add.ListaPet();
+//
+//        add.verifica(15);
+//
+//        add.removePet(3);
+//
+//        add.ListaPet();
 
-        add.verifica(15);
+        add.addBanho(2, true, false);
 
-        add.removePet(3);
-
-        add.ListaPet();
     }
 }
