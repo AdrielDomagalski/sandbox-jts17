@@ -7,11 +7,13 @@ public class Banho {
     private boolean perfume;
     private boolean seco;
     private int id;
+    private boolean agua;
 
-    public Banho(int id, boolean perfume, boolean seco) {
+    public Banho(int id, boolean perfume, boolean seco, boolean agua) {
         this.id = id;
         this.perfume = perfume;
         this.seco = seco;
+        this.agua = agua;
     }
 
     public boolean isPerfume() {
@@ -30,16 +32,11 @@ public class Banho {
         this.seco = seco;
     }
 
-  //  @Override
-//    public String toString() {
-//            if (seco == true && perfume == true) {
-//                return "Banho com agua e perfume";
-//            }else if(seco == false && perfume == false){
-//                return  "Banho sem agua e sem perfume";
-//            }else if(seco == false && perfume == true){
-//                return "Banho sem agua e com perfume";
-//            }else{
-//                return "Banho com agua e sem perfume";
-//            }
-//    }
+    public boolean isAgua() {
+        return agua;
+    }
+
+    public void setAgua(boolean agua) {
+        this.agua = agua;
+    }
 }

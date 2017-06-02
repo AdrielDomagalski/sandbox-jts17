@@ -9,15 +9,6 @@ public class Pet {
     private String raca;
     private int idade;
 
-    private Banho banho;
-
-    public Banho getBanho() {
-        return banho;
-    }
-
-    public void setBanho(Banho banho) {
-        this.banho = banho;
-    }
 
     public int getId() {
         return id;
@@ -56,5 +47,14 @@ public class Pet {
         this.nome = nome;
         this.raca = raca;
         this.idade = idade;
+    }
+
+    @Override
+    public String toString() {
+        return "Pet{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", raca='" + raca + '\'' +
+                ", idade=" + idade;
     }
 }

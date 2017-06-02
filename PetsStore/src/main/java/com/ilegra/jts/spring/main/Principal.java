@@ -15,59 +15,25 @@ public class Principal {
        ServicoPet servicoPet = injector.getInstance(ServicoPet.class);
 
        servicoPet.addPet(0,"pedro", "vira-lata", 5);
+       servicoPet.removePet(0);
+
+       servicoPet.addPet(0,"pedro", "vira-lata", 5);
        servicoPet.addPet(1, "goldofredo","golden", 6);
        servicoPet.addPet(2, "cabra", "cabrito",15);
 
-       servicoPet.ListaPet();
-
-       servicoPet.addBanho(2,false,true);
-
-       servicoPet.addCorte(2,true,false);
-
-       servicoPet.MostraServicos();
-
-       servicoPet.removePet(1);
 
        servicoPet.pesquisaPorIdade(5);
 
 
+       servicoPet.addBanho(1,false,true, true);
+       servicoPet.addBanho(2,true,false, false);
 
+       servicoPet.addCorte(1,false,true);
+       servicoPet.addCorte(0,true,false);
 
+       servicoPet.addBanho(1,true,true, false);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       //               Pet pet = new Pet(0, "adr", "raco", 10);
-//        ServicoPet add = new ServicoPet();
-//        Pet pet2 = new Pet(1, "vitor", "marchal", 15);
-//        ServicoPet add2 = new ServicoPet();
-//        Pet pet3 = new Pet(2, "betowem", "golden", 5);
-//        ServicoPet add3 = new ServicoPet();
-//
-//        add.addPet(pet);
-//        add.addPet(pet2);
-//        add.addPet(pet3);
-//
-////
-////        add.verifica(15);
-////
-////        add.removePet(3);
-////
-////        add.ListaPet();
-//
-//        add.addBanho(0, true, true);
-//        add.addCorte(0, true, false);
+       servicoPet.topPets();
 
     }
 }
