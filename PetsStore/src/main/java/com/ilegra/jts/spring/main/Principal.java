@@ -22,16 +22,17 @@ public class Principal {
        servicoPet.addPet(2, "cabra", "cabrito",15);
 
 
-       servicoPet.pesquisaPorIdade(5);
+       //servicoPet.pesquisaPorIdade(5);
 
 
        servicoPet.addBanho(1,false,true, true);
        servicoPet.addBanho(2,true,false, false);
 
-       servicoPet.addCorte(1,false,true);
-       servicoPet.addCorte(0,true,false);
+       servicoPet.addCorte(0,false,true);
+       servicoPet.addCorte(1,true,false);
 
        servicoPet.addBanho(1,true,true, false);
+       servicoPet.addCorte(1,false,true);
 
        servicoPet.topPets();
 

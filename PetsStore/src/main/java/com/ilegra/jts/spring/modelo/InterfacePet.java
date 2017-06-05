@@ -9,9 +9,10 @@ import java.util.Map;
 public interface InterfacePet {
     boolean addPet(int id, String nome, String raca, int idade);
     boolean removePet(int id);
-//    boolean pesquisaPorIdade(int idade);
-//    boolean addBanho(int id, boolean seco, boolean perfume, boolean agua);
-//    boolean addCorte(int id, boolean peloCurto, boolean peloLongo );
-//    Map<Integer,List<Pet>> listPetServices();
+    boolean pesquisaPorIdade(int idade);
+    boolean addBanho(int id, boolean seco, boolean perfume, boolean agua);
+    boolean addCorte(int id, boolean peloCurto, boolean peloLongo );
+    Map<Integer,List<Pet>> listaPetServicos();
+
 
 }

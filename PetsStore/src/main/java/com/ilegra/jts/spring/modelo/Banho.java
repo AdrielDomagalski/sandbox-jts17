@@ -10,7 +10,6 @@ public class Banho {
     private boolean agua;
 
     public Banho(int id, boolean perfume, boolean seco, boolean agua) {
-        this.id = id;
         this.perfume = perfume;
         this.seco = seco;
         this.agua = agua;

@@ -11,7 +11,7 @@ public class CortePelo {
     public CortePelo(int id, boolean peloCurto, boolean peloLongo) {
         this.peloCurto = peloCurto;
         this.peloLongo = peloLongo;
-        this.id = id;
+
     }
 
     public boolean isPeloCurto() {

@@ -60,17 +60,21 @@ public class ServicoPet implements InterfacePet {
 
     public boolean addBanho(int id, boolean seco, boolean perfume, boolean agua) {
         try {
-            for (Integer key : listaPet.getListaPet().keySet()) {
-                if (listaPet.getListaPet().containsKey(key)) {
+            if(listaServico.getPetServico().containsKey(id)){
+                listaServico.getPetServico().get(id).add(new Banho(id, seco, perfume, agua));
+                System.out.println("\n Novo Banho adicionando com sucesso ao pet " + listaPet.getListaPet().get(id).getNome());
+                return true;
+            }
+            else if (listaPet.getListaPet().containsKey(id)) {
                     listaServico.getPetServico().put(id, new ArrayList<Object>());
                     listaServico.getPetServico().get(id).add(new Banho(id, seco, perfume, agua));
-                    System.out.println("\n Banho adicionando com sucesso ao pet " + listaPet.getListaPet().get(id).getNome());
+                    System.out.println("\n Primeiro Banho adicionando com sucesso ao pet " + listaPet.getListaPet().get(id).getNome());
                     return true;
                 } else {
-                    System.out.println("\n Erro ao adicionar banho  no pet");
+                    System.out.println("\n Erro ao adicionar banho  adicione o Pet");
                     return false;
                 }
-            }
+
         } catch (Exception e) {
             System.out.println("erro: " + e);
         }
@@ -79,37 +83,30 @@ public class ServicoPet implements InterfacePet {
 
     public boolean addCorte(int id, boolean peloCurto, boolean peloLongo) {
         try {
-            for (Integer key : listaPet.getListaPet().keySet()) {
-                if (listaPet.getListaPet().containsKey(key)) {
-                    listaServico.getPetServico().put(id, new ArrayList<Object>());
-                    listaServico.getPetServico().get(id).add(new CortePelo(id, peloCurto, peloLongo));
-                    System.out.println("\n Corte Adicionado com sucesso " + listaPet.getListaPet().get(id).getNome());
-                    return true;
-                } else {
-                    System.out.println("\n Erro ao adicionar o corte");
-                    return false;
-                }
+            if(listaServico.getPetServico().containsKey(id)) {
+                listaServico.getPetServico().get(id).add(new CortePelo(id, peloCurto, peloLongo));
+                System.out.println("\n Novo corte adicionado adicionado");
+                return true;
             }
+            else if(listaPet.getListaPet().containsKey(id)) {
+                listaServico.getPetServico().put(id, new ArrayList<Object>());
+                listaServico.getPetServico().get(id).add(new CortePelo(id, peloCurto, peloLongo));
+                System.out.println("\n Primeiro corte adicionado " + listaPet.getListaPet().get(id).getNome());
+                return true;
+            }else {
+                System.out.println("\n Adicione primeiro um Pet");
+                return false;
+            }
+
         } catch (Exception e) {
             System.out.println("erro: " + e);
         }
         return true;
     }
-//
-//    //pega o id do pet com o numero de serviços e passa pro map com uma chave,
 
-    public void topPets() {
-        int aux = 0;
-        System.out.println("Lista dos dez pets com mais seerviços");
-        for (Map.Entry chave : listaPetServicos().entrySet()) {
-            if (aux ++ <= 10) {
-                System.out.println("Quantidade de Serviços: " + chave);
-            }
-        }
-    }
 
     public Map<Integer, List<Pet>> listaPetServicos() {
-        Map<Integer, List<Pet>> listaTopDez = new TreeMap<>();
+        Map<Integer, List<Pet>> listaTopDez = new TreeMap<>(Collections.reverseOrder());
         for (Integer key : listaServico.getPetServico().keySet()) {
             if (listaTopDez.containsKey(listaServico.getPetServico().get(key).size())) {
                 listaTopDez.get(listaServico.getPetServico().get(key).size()).add(listaPet.getListaPet().get(key));
@@ -121,6 +118,15 @@ public class ServicoPet implements InterfacePet {
         return listaTopDez;
     }
 
+    public void topPets() {
+        int aux = 0;
+        System.out.println("Lista dos dez pets com mais seerviços");
+        for (Map.Entry chave : listaPetServicos().entrySet()) {
+            if (aux ++ <= 10) {
+                System.out.println("Quantidade de Serviços: " + chave);
+            }
+        }
+    }
 
 }
 
