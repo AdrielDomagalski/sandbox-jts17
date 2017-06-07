@@ -159,7 +159,7 @@ public class Operacao extends Application implements Pedagio {
     @Override
     public Response PagamentoCaminhao(@PathParam("eixo") int eixoAdicional, @PathParam("valor") double valor) {
         try {
-            response = Response.ok(caminhao.validaPagamentoCaminhao(valor, eixoAdicional));
+            response = Response.ok(caminhao.validaPagamentoCaminhao(eixoAdicional, valor));
         } catch(Exception e) {
             response = Response.serverError();
         }

@@ -15,15 +15,16 @@ public class Carro {
 
     public String validaPagamentoCarro(double dinheiro) {
         DecimalFormat df = new DecimalFormat("0.##");
-        double valida = dinheiro - valor;
         String mensagem = null;
         if(dinheiro > 2.11){
+            double valida = dinheiro - valor;
             return mensagem = "Carro liberado \n Seu troco: " + df.format(valida);
         }
         else if(dinheiro == 2.11){
             return mensagem = "Carro Liberado";    
         }
         else if(dinheiro < 2.11){
+            double valida = valor - dinheiro;
             return mensagem = "Faltou " + df.format(valida) + " dolares";
         }
         return mensagem;
