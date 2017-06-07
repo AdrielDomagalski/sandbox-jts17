@@ -1,11 +1,7 @@
 package com.github.adrielsoares.java.rest.Operacoes;
-
 import com.github.adrielsoares.java.rest.Veiculos.*;
-
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
+import org.springframework.stereotype.Service;
+import javax.ws.rs.*;
 import javax.ws.rs.core.Application;
 import javax.ws.rs.core.Response;
 
@@ -13,6 +9,9 @@ import javax.ws.rs.core.Response;
 /**
  * Created by adriel on 06/06/17.
  */
+
+@Service
+@ApplicationPath("/toll")
 public class Operacao extends Application implements Pedagio {
     Response.ResponseBuilder response;
     private Bicicleta bicicleta;
