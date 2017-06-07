@@ -27,14 +27,14 @@ public class Servlet extends HttpServlet {
 
         PrintWriter out = respon.getWriter();
 
-        out.println(calculador.calcula(1, 2, "+"));
-        out.println(calculador.calcula(7, 6, "*"));
-        out.println(calculador.calcula(4, 8, "+"));
-        out.println(calculador.calcula(4, 0, "/"));
-        out.println(calculador.calcula(7, 3, "-"));
-        out.println(calculador.calcula(9, 3, "/"));
-        out.println(calculador.calcula(5, 7, "+"));
-        out.println(calculador.calcula(2, 4, "^"));
+        out.println(calculador.calculo(1, 2, "+"));
+        out.println(calculador.calculo(7, 6, "*"));
+        out.println(calculador.calculo(4, 8, "+"));
+        out.println(calculador.calculo(4, 0, "/"));
+        out.println(calculador.calculo(7, 3, "-"));
+        out.println(calculador.calculo(9, 3, "/"));
+        out.println(calculador.calculo(5, 7, "+"));
+        out.println(calculador.calculo(2, 4, "^"));
 
         out.println(calculador.getOpera());
         ((AnnotationConfigApplicationContext) applicationContext).close();

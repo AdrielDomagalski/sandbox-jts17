@@ -6,36 +6,42 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /**
  * Created by Adriel on 21/05/2017.
  */
 @Configuration
-@ComponentScan(basePackages = "com.github.adrielsoares.java.spring4.calculadora.Operacoes")
+@ComponentScan(basePackages = "com.github.adrielsoares.java.spring4.calculadora")
 public class ConfiguracaoAPP {
-    // is
 
     @Bean
     public Calculo calculo(){
-        Calculo calculo = new Calculo();
+        Calculo calculo = new Calculo(mapOperacao(), mapOpera());
 
-        calculo.getOperacaoMap().put("+", new Soma());
-        calculo.getOperacaoMap().put("-", new Subtracao());
-        calculo.getOperacaoMap().put("*", new Multiplicacao());
-        calculo.getOperacaoMap().put("/", new Divisao());
-        calculo.getOperacaoMap().put("^", new Potencia());
+        mapOperacao().getMapOperacao().put("+", new Soma());
+        mapOperacao().getMapOperacao().put("-", new Subtracao());
+        mapOperacao().getMapOperacao().put("*", new Multiplicacao());
+        mapOperacao().getMapOperacao().put("/", new Divisao());
+        mapOperacao().getMapOperacao().put("^", new Potencia());
 
-        calculo.getOpera().put("+", new ArrayList());
-        calculo.getOpera().put("-", new ArrayList());
-        calculo.getOpera().put("*", new ArrayList());
-        calculo.getOpera().put("/", new ArrayList());
-        calculo.getOpera() .put("^", new ArrayList());
-        calculo.getOpera().put("er", new ArrayList());
+        mapOpera().getOpera().put("+", new ArrayList());
+        mapOpera().getOpera().put("-", new ArrayList());
+        mapOpera().getOpera().put("*", new ArrayList());
+        mapOpera().getOpera().put("/", new ArrayList());
+        mapOpera().getOpera().put("^", new ArrayList());
+        mapOpera().getOpera().put("er", new ArrayList());
 
         return calculo;
     }
+
+
+    public MapOpera mapOpera(){
+        return new MapOpera();
+    }
+
+    public MapOperacao mapOperacao(){
+        return new MapOperacao();
+    }
+
 }
 

@@ -14,13 +14,13 @@ public class Main {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(ConfiguracaoAPP.class);
         Calculo calculador = (Calculo) applicationContext.getBean("calculo");
 
-        System.out.println(calculador.calcula(5, 5, "+"));
-        System.out.println(calculador.calcula(10, 5, "-"));
-        System.out.println(calculador.calcula(20, 4, "/"));
-        System.out.println(calculador.calcula(20, 0, "/"));
-        System.out.println(calculador.calcula(10, 2, "*"));
-        System.out.println(calculador.calcula(7, 2, "^"));
-        System.out.println(calculador.calcula(8, 5, "+"));
+        System.out.println(calculador.calculo(5, 5, "+"));
+        System.out.println(calculador.calculo(10, 5, "-"));
+        System.out.println(calculador.calculo(20, 4, "/"));
+       // System.out.println(calculador.calcula(20, 0, "/"));
+        System.out.println(calculador.calculo(10, 2, "*"));
+        System.out.println(calculador.calculo(7, 2, "^"));
+        System.out.println(calculador.calculo(8, 5, "+"));
 
         System.out.println(calculador.getOpera());
 
