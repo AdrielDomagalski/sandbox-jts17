@@ -1,0 +1,42 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : com.gradle.exercise : Calculadora-1.0-SNAPSHOT.war (exploded)">
+    <output-path>$PROJECT_DIR$/build/libs/exploded/Calculadora-1.0-SNAPSHOT.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/build/libs/exploded/Calculadora-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="Calculadora_main/web/Web Gradle : Calculadora-1.0-SNAPSHOT.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Calculadora_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: org.springframework:spring-core:4.3.8.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.3.8.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.3.8.RELEASE" />
+          <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.3.8.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.3.8.RELEASE" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-catalina/8.0.9/a15eab2c30bbd02b0beef6151c6016d036f71fe2/tomcat-catalina-8.0.9.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.0.1/6bf0ebb7efd993e222fc1112377b5e92a13b38dd/javax.servlet-api-3.0.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-servlet-api/8.0.9/ddc6b1d06f854bc44fab0cba47cb708c030664c/tomcat-servlet-api-8.0.9.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-jsp-api/8.0.9/47f669d7a54f3dabd086775ad42cd3ea552ec6be/tomcat-jsp-api-8.0.9.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-juli/8.0.9/befe9be744a4c8bd9ddbc11371818f6c8e31516b/tomcat-juli-8.0.9.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-annotations-api/8.0.9/8dbbb8e548eb4b9508bd0a4cafe65a0eccfe42da/tomcat-annotations-api-8.0.9.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-api/8.0.9/d70bf5d44e3245dfdafc24f038b642d1960622e9/tomcat-api-8.0.9.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-jni/8.0.9/7521e5467cfbffe6a88c2c5b18a1caaf0536a196/tomcat-jni-8.0.9.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-coyote/8.0.9/92a5e7a85f81a27a17cc26c8f050dc8ada739e79/tomcat-coyote-8.0.9.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-util/8.0.9/1ce76eb41a1dc3037caa5a9944983bb3e2ade00a/tomcat-util-8.0.9.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-util-scan/8.0.9/51cab2f9a2223215cdd58b6711a8ebc9e6839fa6/tomcat-util-scan-8.0.9.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-el-api/8.0.9/27676c3fa7978b703d30361b386df7d4025cf5a7/tomcat-el-api-8.0.9.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
