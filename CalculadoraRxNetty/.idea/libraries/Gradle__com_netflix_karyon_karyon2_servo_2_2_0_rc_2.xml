@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.netflix.karyon:karyon2-servo:2.2.0-rc.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.karyon/karyon2-servo/2.2.0-rc.2/b8ae453eb1ee27cc077f5a310cdb37d53a58a800/karyon2-servo-2.2.0-rc.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.karyon/karyon2-servo/2.2.0-rc.2/c3250c7845cc0159b4b2f4dc8eb00a9c35e27670/karyon2-servo-2.2.0-rc.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

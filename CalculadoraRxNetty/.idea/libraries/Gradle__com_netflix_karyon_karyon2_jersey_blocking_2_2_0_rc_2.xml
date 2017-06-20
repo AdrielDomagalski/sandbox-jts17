@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.netflix.karyon:karyon2-jersey-blocking:2.2.0-rc.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.karyon/karyon2-jersey-blocking/2.2.0-rc.2/e5202d66253d1e64e7d2bd29667a9f84954af247/karyon2-jersey-blocking-2.2.0-rc.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.karyon/karyon2-jersey-blocking/2.2.0-rc.2/22789311fb9cf4e5f29910f6eba4720d77202bf8/karyon2-jersey-blocking-2.2.0-rc.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
