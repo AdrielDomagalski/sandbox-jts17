@@ -1,7 +1,7 @@
 package com.github.adrielsoares.java.spring4.calculadora.rxnetty.Configuracao;
 
-import com.github.adrielsoares.java.spring4.calculadora.Configuracao.Operacoes.*;
 import com.github.adrielsoares.java.spring4.calculadora.rxnetty.Operacoes.*;
+import com.github.adrielsoares.java.spring4.calculadora.rxnetty.ResourceCalculo;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -19,6 +19,12 @@ public class ConfiguracaoAPP {
     public Calculo calculo() {
         Calculo calculo = new Calculo(mapOperacao(), mapOpera());
         return calculo;
+    }
+
+    @Bean
+    public ResourceCalculo resourceCalculo(){
+        ResourceCalculo resourceCalculo = new ResourceCalculo(calculo());
+        return resourceCalculo;
     }
 
 

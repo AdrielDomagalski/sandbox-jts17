@@ -13,10 +13,13 @@ import javax.ws.rs.Produces;
 public class ResourceCalculo {
     Calculo calculo;
 
+    public ResourceCalculo(Calculo calculo) {
+    }
+
     @GET
     @Produces
     public static String historico() {
-
+        return null;
     }
 }
 
